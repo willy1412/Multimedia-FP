@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>MainMenu</name>
+    <events>
+        <event-block sid="454012145255133">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="425462595111727" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">PlayMain</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="989810010707483" type="Audio">
+                    <param id="0" name="Audio file">ButtonClick</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="882129045159379" type="System">
+                    <param id="0" name="Layout">Game</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="147126834237139">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="409474523458520" type="Mouse">
+                    <param id="0" name="Object">PlayMain</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="485329740412961" type="PlayMain">
+                    <param id="0" name="Scale">0.9</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="603198286471393">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="881910802959477" type="Mouse">
+                    <param id="0" name="Object">PlayMain</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="428089022135281" type="PlayMain">
+                    <param id="0" name="Scale">0.7</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="316009840720302">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="344607025523842" type="Mouse">
+                    <param id="0" name="Object">ExitButton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="928282984334565" type="ExitButton">
+                    <param id="0" name="Scale">0.9</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="757900390625920">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="954215445091223" type="Mouse">
+                    <param id="0" name="Object">ExitButton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="803592402665753" type="ExitButton">
+                    <param id="0" name="Scale">0.7</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="530075690931627">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="838611951868820" type="Mouse">
+                    <param id="0" name="Object">CreditsButton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="120753636655448" type="CreditsButton">
+                    <param id="0" name="Scale">0.4</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="515998756731163">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="882414208433051" type="Mouse">
+                    <param id="0" name="Object">CreditsButton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="211081189919984" type="CreditsButton">
+                    <param id="0" name="Scale">0.3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="864282010847186">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="783011470072128" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">CreditsButton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="950776497452445" type="Audio">
+                    <param id="0" name="Audio file">ButtonClick</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="106272292223639" type="System">
+                    <param id="0" name="Layout">Credits</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="759861307787948">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="821900658280935" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">ExitButton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="570608664806356" type="Audio">
+                    <param id="0" name="Audio file">ButtonClick</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="875841423899862" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="1" name="Close" sid="671696193237159" type="Browser" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

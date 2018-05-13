@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Tutorial1</name>
+    <events>
+        <event-block sid="688311216756752">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="299199995949405" type="System" />
+            </conditions>
+            <actions>
+                <action id="2" name="Set looping" sid="926125004893224" type="Video">
+                    <param id="0" name="Mode">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="449048946953499">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="762632906443472" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">NextButton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="527964733783311" type="Audio">
+                    <param id="0" name="Audio file">ButtonClick</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="605475821397586" type="System">
+                    <param id="0" name="Layout">Tutorial2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="661661471828876">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="410231556254611" type="Mouse">
+                    <param id="0" name="Object">NextButton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="183922680237074" type="NextButton">
+                    <param id="0" name="Scale">1.1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="814051315600016">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="145156762241088" type="Mouse">
+                    <param id="0" name="Object">NextButton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="442182759807411" type="NextButton">
+                    <param id="0" name="Scale">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
